@@ -1,0 +1,112 @@
+body {
+    background-image: url("45666.jpg");
+}
+
+#game_name {
+    color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Berlin Sans FB';
+    font-size: 40pt;
+    padding: 0;
+    margin: 0;
+    background: rgb(252,255,244);
+    background: -moz-radial-gradient(center, ellipse cover, rgb(180, 183, 174) 0%, rgb(162, 168, 156) 40%, rgb(111, 122, 108) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(180, 183, 174) 0%, rgb(162, 168, 156) 40%, rgb(111, 122, 108) 100%);
+    background: radial-gradient(ellipse at center, rgb(180, 183, 174) 0%, rgb(162, 168, 156) 40%, rgb(111, 122, 108) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
+}
+
+#choosen_number {
+    font-size: 20pt;
+    text-align: center;
+    padding: 12px;
+}
+
+#submit {
+    font-size: 20pt;
+    text-align: center;
+    padding: 12px;
+}
+
+#retry {
+    font-size: 20pt;
+    text-align: center;
+    padding: 12px;
+}
+
+
+h1 {
+    font-size: 25pt;
+    color: #c0c0c0;
+    text-align: center;
+    font-family: 'Berlin Sans FB';
+
+}
+
+#littlebitch {
+    color: red;
+}
+
+#bloc_choice {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#try {
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 70px;
+    display: block;
+}
+
+#stats {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: fill;
+    font-size: 18pt;
+    color: white;
+    font-family: 'Berlin Sans FB';
+    border: white 2px solid;
+    background: darkslategrey;
+}
+
+
+#pic {
+    border: white solid 2px;
+    border-radius: 5px;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    background-image: url("faces/face_basic.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    height: 100px;
+}
+
+#speak {
+    border: white solid 2px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    background: darkslategrey;
+    font-size: 18pt;
+    font-family: 'Berlin Sans FB';
+
+}
+
+#speak_box {
+    margin-top: 40px;
+}
+
+img {
+    position: absolute;
+}
+
+#answer_hidden {
+    text-align: center;
+    font-size: 30px;
+}

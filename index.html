@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Guess my random !</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="game_name">? GUESS MY RANDOM ?</div>
+<h1 id="title">I'll choose a number between 1 and 100. Next, you'll try to guess my choosen one ! You've got 10 tries ! Good luck !</h1>
+
+<div id="try"><button style="font-size: 50pt; font-weight: bold; font-family: 'Berlin Sans FB'; color: darkred">Try it !</button></div>
+
+
+<div id="bloc_choice" style="display:none">
+    <input type="number" maxlength="3" id="choosen_number" placeholder="Guess here ... ">
+    <input id="submit" value="Submit" type="button" onclick="subAnswer()">
+    <input id="retry" value="Retry" type="button" onclick="refreshGame()">
+</div>
+<div style="display: flex">
+    <div id="stats" style="width: 400px; text-align: center; display:none">
+        <div id="remain" style="text-align: left">Remain : <span style="color: darkred" id="time_remain"></span></div>
+        <div id="test" style="text-align: left">Taped numbers : <span style="color: darkred" id="taped_nb"></span></div>
+        <div id="situation" style="text-align: left">Statut : <span style="color: darkred" id="statut"></span></div>
+        <div id="proximity" style="text-align: left">Indice : <span style="color: darkred" id="indice"></span></div>
+    </div>
+</div>
+
+<div class="container" id="speak_box" style="display:none">
+    <div class="row">
+        <div class="col-md-2" id="pic" onclick="tapPic()"></div>
+        <div class="col-md-10" id="speak">It's your turn, you've got 10 tests remain, entertain me !</div>
+    </div>
+</div>
+
+<div id="answer_hidden" style="color:rgba(255,255,255,0.06); display:none"></div>
+
+
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>
