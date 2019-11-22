@@ -10,12 +10,12 @@ let retry = document.getElementById('retry');
 let enterNB = document.getElementById('choosen_number');
 let tapedNB = document.getElementById('taped_nb');
 let indice = document.getElementById('indice');
+let round1 = document.getElementById('round1');
+let cache = document.getElementById('block_cache');
 var click = 0;
 
 click_counter = 10;
-statut = 'None';
 document.getElementById('time_remain').innerHTML=click_counter;
-document.getElementById('statut').innerHTML=statut;
 document.getElementById('answer_hidden').innerHTML=x;
 
 document.getElementById("try").addEventListener("click", function(){
@@ -24,6 +24,7 @@ document.getElementById("try").addEventListener("click", function(){
     choice.style.display='block';
     speak_box.style.display='block';
     stats.style.display='block';
+    round1.style.display='block';
 });
 
 document.getElementById("game_name").addEventListener("click", function(){
@@ -78,6 +79,7 @@ function submitResult() {
         speak.innerHTML ='You won, finally you`re not a little pussy !';
         pic.style.backgroundImage= 'url("faces/face_happy.png")';
         submit.style.display='none';
+        cache.style.display='block';
     }
 }
 
@@ -119,3 +121,21 @@ function tapPic()
 
 pic.addEventListener('click', tapPic);
 
+function clickR1() {
+    document.getElementById('round2').style.display='block';
+}
+
+function clickR2() {
+    document.getElementById('round3').style.display='block';
+}
+
+function clickR3() {
+    document.getElementById('round1').style.display='block';
+    document.getElementById('round2').style.display='block';
+    document.getElementById('round3').style.display='block';
+    indice.innerHTML= 'Congratulations ! Riolu evolved to Lucario !';
+    speak.innerHTML ='Woh ! Your power make me evolved ! Thanks bro !';
+    pic.style.backgroundImage= 'url("faces/face_evolved.png")';
+    submit.style.display='none';
+    cache.style.display='block';
+}

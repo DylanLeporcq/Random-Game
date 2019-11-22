@@ -25,17 +25,22 @@
     <div id="stats" style="width: 400px; text-align: center; display:none">
         <div id="remain" style="text-align: left">Remain : <span style="color: darkred" id="time_remain"></span></div>
         <div id="test" style="text-align: left">Taped numbers : <span style="color: darkred" id="taped_nb"></span></div>
-        <div id="situation" style="text-align: left">Statut : <span style="color: darkred" id="statut"></span></div>
         <div id="proximity" style="text-align: left">Indice : <span style="color: darkred" id="indice"></span></div>
     </div>
 </div>
-
+<div id="block_cache" style="display: none"></div>
 <div class="container" id="speak_box" style="display:none">
     <div class="row">
         <div class="col-md-2" id="pic" onclick="tapPic()"></div>
         <div class="col-md-10" id="speak">It's your turn, you've got 10 tests remain, entertain me !</div>
     </div>
 </div>
+
+
+
+<input id="round1" type="button"  style="display: none; cursor: auto" onclick="clickR1()">
+<input id="round2" type="button" style="display: none; cursor: auto" onclick="clickR2()">
+<input id="round3" type="button" style="display: none; cursor: auto" onclick="clickR3()">
 
 <div id="answer_hidden" style="color:rgba(255,255,255,0.06); display:none"></div>
 
